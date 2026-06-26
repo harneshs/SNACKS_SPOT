@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNACKS SPOT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> SNACKS SPOT</h1>
+    </header>
+
+    <div class="container">
+
+        ```
+        <!-- MENU -->
+        <div class="menu-section">
+            <h2>Menu</h2>
+            <div id="menuContainer" class="menu-grid"></div>
+        </div>
+
+        <!-- CART -->
+        <div class="cart-section">
+
+            <h2>Bill</h2>
+
+            <div id="cartItems"></div>
+
+            <hr>
+
+            <h3>Total: ₹<span id="totalAmount">0</span></h3>
+
+            <div class="button-group">
+                <button onclick="showQR()">Pay Now</button>
+                <button onclick="placeOrder()">Place Order</button>
+                <button onclick="printBill()">Print Bill</button>
+                <button onclick="clearCart()">Clear Cart</button>
+            </div>
+
+        </div>
+        ```
+
+    </div>
+
+    <!-- QR MODAL -->
+
+    <div id="qrModal" class="modal">
+
+        ```
+        <div class="modal-content">
+
+            <span class="close" onclick="closeQR()">&times;</span>
+
+            <h2>Scan & Pay</h2>
+
+            <img id="qrImage" src="" alt="QR Code">
+
+        </div>
+        ```
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
